@@ -1,7 +1,10 @@
-def is_whole_number(my_number):
-    if isinstance(my_number, float):
-        return False
+def is_natural_number(my_number):
+    if isinstance(my_number, int):
+        if my_number < 0:
+            return False
+        else:
+            return True
     else:
-        return True
+        return False
 
-print(is_whole_number(10))
+print(is_natural_number(10))
